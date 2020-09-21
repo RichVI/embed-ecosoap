@@ -29,7 +29,7 @@ import ItemsCarousel from 'react-items-carousel';
 
 // ApolloClient -----------------------------------------
 const httpLink = createHttpLink({
-  uri: 'http://35.208.9.187:9091/web-api-1',
+  uri: process.env.REACT_APP_GRAPHQL_API
 });
 
 const client = new ApolloClient({
